@@ -1,0 +1,97 @@
+.my-logo {
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.my-text-header {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.my-text-header2 {
+    color: #1A1A2E;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.my-text-para {
+    color: rgba(256, 256, 256, 0.9);
+    font: 500;
+    font-size: 20px;
+}
+.my-text-para2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+.my-text-para3 {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.my-gradient-bg {
+    background: linear-gradient(90deg, #3a7bd5 0%, #00d2ff 100%) !important;
+}
+
+.my-search-box {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    padding: 28px 32px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.my-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0 20px 0;
+}
+
+.my-label {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.my-box {
+    background-color: #30202E;
+    color: white;
+    font-size: 16px;
+}
+
+.my-box::placeholder {
+    font-size: 16px;
+}
+
+.my-button {
+    height: 60px;
+    font-weight: bold;
+}
+
+.my-button:hover {
+    background-color: #1E87F0;
+    color: white;
+}
+
+.my-rounded {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* .my-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+} */
+.my-card:hover {
+    transform: translateY(-4px);
+}
+
+.my-profile {
+    color: white;
+    padding: 8px;
+    margin-right: 10px;
+}

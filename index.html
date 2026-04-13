@@ -1,39 +1,359 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ตัวอย่างการใช้งาน UIkit</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
 
-    <div class="uk-container uk-margin-top">
+    <nav class="uk-navbar uk-navbar-container uk-padding uk-flex uk-flex-between" style="background-color: #0F1B2D;">
+        <h1 class="my-logo uk-margin-remove">Wander<span style="color: #38C9EF;">ly</span></h1>
 
-        <h1 class="uk-heading-line uk-text-center"><span>ยินดีต้อนรับสู่ 007x Website</span></h1>
+        <button class="uk-button uk-button-primary uk-button-small uk-border-pill">SIGN IN</button>
+    </nav>
 
-        <div class="uk-child-width-1-2@m" uk-grid>
-            
-            <div>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-header">
-                        <h3 class="uk-card-title">All members</h3>
+    <section class="my-gradient-bg uk-margin-remove uk-padding">
+        <h1 class="my-text-header uk-text-center uk-padding-top">Explore the World,Your Way</h1>
+        <p class="my-text-para uk-text-center">Curated trips to over 80 destinations worldwide</p>
+
+        <div class="my-search-box">
+            <div class="uk-flex uk-grid-small">
+                <span class="uk-background-primary uk-border-rounded"
+                    style="color: white; cursor: pointer; padding-inline: 15px; padding-block: 2px; margin-left: 16px;">Flights
+                    + Hotel
+                </span>
+                <span style="cursor: pointer;">Hotel only</span>
+                <span style="cursor: pointer;">Packages</span>
+            </div>
+
+            <div class="my-grid my-label">
+                <div class="uk-flex uk-flex-column">
+                    <label class="">FROM</label>
+                    <input class="my-box uk-input uk-border-rounded" type="text" placeholder="Bangkok (BKK)">
+                </div>
+                <div class="uk-flex uk-flex-column">
+                    <label class="">TO</label>
+                    <input class="my-box uk-input uk-border-rounded" type="text" placeholder="Where to?">
+                </div>
+                <div class="uk-flex uk-flex-column">
+                    <label class="">DATES</label>
+                    <input class="my-box uk-input uk-border-rounded" type="text" placeholder="Check-in — Check-out">
+                </div>
+                <div class="uk-flex uk-flex-column">
+                    <label class="">TRAVELERS</label>
+                    <div class="uk-form-controls">
+                        <select class="uk-select uk-border-rounded my-box">
+                            <option>1 Adult</option>
+                            <option>2 Adults</option>
+                            <option>3 Adults</option>
+                            <option>4 Adults</option>
+                            <option>5 Adults</option>
+                            <option>6 Adults</option>
+                        </select>
                     </div>
-                    <div class="uk-card-body">
-                        <p>67130500016 นาวี ลายเสมา (วี)</p>
-                        <p>67130500036 วรรณวัฒน์ ศิริอาคเนย์ (โอ)</p>
-                        <p>67130500086 ธนวัฒน์ หลี่ (โต้ง)</p>
+                </div>
+
+            </div>
+            <button class="uk-button uk-width-1.1 my-button uk-border-rounded">
+                SEARCH TRIPS
+            </button>
+        </div>
+    </section>
+
+    <section class="my-grid uk-margin-remove uk-padding" style="background-color: #e7f7ff;">
+        <div class="uk-text-center">
+            <p class="uk-text-primary uk-margin-remove my-text-para2">80+</p>
+            <label class="uk-text-center">Destinations</label>
+        </div>
+        <div class="uk-text-center">
+            <p class="uk-text-primary uk-margin-remove my-text-para2">150k</p>
+            <label class="uk-text-center">Happy travelers</label>
+        </div>
+        <div class="uk-text-center">
+            <p class="uk-text-primary uk-margin-remove my-text-para2">4.9</p>
+            <label class="uk-text-center">Average rating</label>
+        </div>
+        <div class="uk-text-center">
+            <p class="uk-text-primary uk-margin-remove my-text-para2">24/7</p>
+            <label class="uk-text-center">Customer support</label>
+        </div>
+    </section>
+
+    <section class="uk-padding">
+        <div class="my-grid">
+            <div class="uk-margin-remove">
+                <h2 class="uk-margin-small">Top Destinations</h2>
+                <label>Handpicked spots loved by our travelers</label>
+            </div>
+            <div class="uk-flex uk-flex-right uk-flex-middle">
+                <button class="uk-button my-button uk-border-rounded">
+                    VIEW ALL →
+                </button>
+            </div>
+        </div>
+
+        <div class="my-grid">
+            <div class="uk-inline-clip uk-border-rounded uk-text-center my-card">
+                <img src="images/Kyoto.webp" width="1800" height="1200" alt="">
+                <div class="uk-card uk-card-overlay uk-card-body uk-border-rounded uk-position-cover uk-position-small">
+                    <h3 class="uk-card-title">Kyoto, Japan</h3>
+                    <p>from <span class="uk-text-warning">฿22,900</span></p>
+                </div>
+            </div>
+            <div class="uk-inline-clip uk-border-rounded uk-text-center my-card">
+                <img src="images/Paris.webp" width="1800" height="1200" alt="">
+                <div class="uk-card uk-card-overlay uk-card-body uk-border-rounded uk-position-cover uk-position-small">
+                    <h3 class="uk-card-title">Paris, France</h3>
+                    <p>from <span class="uk-text-warning">฿29,900</span></p>
+                </div>
+            </div>
+            <div class="uk-inline-clip uk-border-rounded uk-text-center my-card">
+                <img src="images/Santorini.jpg" width="1800" height="1200" alt="">
+                <div class="uk-card uk-card-overlay uk-card-body uk-border-rounded uk-position-cover uk-position-small">
+                    <h3 class="uk-card-title">Santorini, Greece</h3>
+                    <p>from <span class="uk-text-warning">฿38,500</span></p>
+                </div>
+            </div>
+            <div class="uk-inline-clip uk-border-rounded uk-text-center my-card">
+                <img src="images/Bali.webp" width="1800" height="1200" alt="">
+                <div class="uk-card uk-card-overlay uk-card-body uk-border-rounded uk-position-cover uk-position-small">
+                    <h3 class="uk-card-title">Bali, Indonesia</h3>
+                    <p>from <span class="uk-text-warning">฿14,500</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="uk-padding uk-background-muted">
+        <div class="uk-text-center">
+            <h2 class="my-text-header2 uk-margin-remove">Choose your Package</h2>
+            <label>All-inclusive deals with no hidden fees</label>
+        </div>
+
+        <div class="uk-margin-top uk-flex uk-flex-column uk-flex-middle uk-flex-center">
+
+            <div class="uk-card uk-card-default uk-width-1 uk-margin uk-border-rounded">
+                <div class="uk-card-header">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-expand uk-flex-column">
+                            <p class="uk-text-bold uk-text-secondary">Explorer</p>
+                            <p class="uk-text-primary uk-text-bold uk-text-large">฿14,900 <span
+                                    class="uk-text-default my-text-para3">/ person</span></p>
+                        </div>
                     </div>
-                    <div class="uk-card-footer">
-                        <a href="#" class="uk-button uk-button-primary" uk-tooltip="title: ขอบคุณที่กดถูกใจ! (Thanks for liking!)">กดเพื่อถูกใจ</a>
+                </div>
+                <div class="uk-card-body">
+                    <div class="uk-flex uk-flex-column uk-margin-small">
+                        <span>
+                            <span uk-icon="icon: check; ratio: 0.85" style="color:#0d6efd;" class="uk-icon"></span>
+                            5 nights hotel
+                        </span>
+                        <span>
+                            <span uk-icon="icon: check; ratio: 0.85" style="color:#0d6efd;" class="uk-icon"></span>
+                            Return flights
+                        </span>
+                        <span>
+                            <span uk-icon="icon: check; ratio: 0.85" style="color:#0d6efd;" class="uk-icon"></span>
+                            Airport transfer
+                        </span>
+                        <span style="color: rgba(0, 0, 0, 0.3);">
+                            <span uk-icon="icon: close; ratio: 0.85" class="uk-icon">
+                                <path fill="none" stroke="#000" stroke-width="1.06" d="M16,16 L4,4"></path>
+                                <path fill="none" stroke="#000" stroke-width="1.06" d="M16,4 L4,16"></path>
+                            </span>
+                            Guide tours
+                        </span>
+                        <span style="color: rgba(0, 0, 0, 0.3);">
+                            <span uk-icon="icon: close; ratio: 0.85" class="uk-icon">
+                                <path fill="none" stroke="#000" stroke-width="1.06" d="M16,16 L4,4"></path>
+                                <path fill="none" stroke="#000" stroke-width="1.06" d="M16,4 L4,16"></path>
+                            </span>
+                            Travel insurance
+                        </span>
+                    </div>
+                </div>
+                <div class="uk-card-footer">
+
+                    <div class="uk-flex uk-flex-center uk-margin">
+                        <button class="uk-button uk-width-1.1 my-button uk-border-rounded uk-width-1-1">
+                            SELECT PLAN
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-card uk-card-default uk-width-1 uk-margin uk-border-rounded">
+                <div class="uk-card-header">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-expand uk-flex-column">
+                            <p class="uk-text-bold uk-text-secondary">Adventure</p>
+                            <p class="uk-text-primary uk-text-bold uk-text-large">฿24,900 <span
+                                    class="uk-text-default my-text-para3">/ person</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-body">
+                    <div class="uk-flex uk-flex-column uk-margin-small">
+                        <span>
+                            <span uk-icon="icon: check; ratio: 0.85" style="color:#0d6efd;" class="uk-icon"></span>
+                            7 nights hotel (4-star)
+                        </span>
+                        <span>
+                            <span uk-icon="icon: check; ratio: 0.85" style="color:#0d6efd;" class="uk-icon"></span>
+                            Return flights
+                        </span>
+                        <span>
+                            <span uk-icon="icon: check; ratio: 0.85" style="color:#0d6efd;" class="uk-icon"></span>
+                            Airport transfer
+                        </span>
+                        <span>
+                            <span uk-icon="icon: check; ratio: 0.85" style="color:#0d6efd;" class="uk-icon"></span>
+                            3 guided tours
+                        </span>
+                        <span style="color: rgba(0, 0, 0, 0.3);">
+                            <span uk-icon="icon: close; ratio: 0.85" class="uk-icon">
+                                <path fill="none" stroke="#000" stroke-width="1.06" d="M16,16 L4,4"></path>
+                                <path fill="none" stroke="#000" stroke-width="1.06" d="M16,4 L4,16"></path>
+                            </span>
+                            Travel insurance
+                        </span>
+                    </div>
+                </div>
+                <div class="uk-card-footer">
+
+                    <div class="uk-flex uk-flex-center uk-margin">
+                        <button class="uk-button uk-width-1.1 my-button uk-border-rounded uk-width-1-1">
+                            SELECT PLAN
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-card uk-card-default uk-width-1 uk-margin uk-border-rounded">
+                <div class="uk-card-header">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-expand uk-flex-column">
+                            <p class="uk-text-bold uk-text-secondary">Luxury</p>
+                            <p class="uk-text-primary uk-text-bold uk-text-large">฿49,900 <span
+                                    class="uk-text-default my-text-para3">/ person</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-body">
+                    <div class="uk-flex uk-flex-column uk-margin-small">
+                        <span>
+                            <span uk-icon="icon: check; ratio: 0.85" style="color:#0d6efd;" class="uk-icon"></span>
+                            10 nights hotel (5-star)
+                        </span>
+                        <span>
+                            <span uk-icon="icon: check; ratio: 0.85" style="color:#0d6efd;" class="uk-icon"></span>
+                            Business class flights
+                        </span>
+                        <span>
+                            <span uk-icon="icon: check; ratio: 0.85" style="color:#0d6efd;" class="uk-icon"></span>
+                            Private transfer
+                        </span>
+                        <span>
+                            <span uk-icon="icon: check; ratio: 0.85" style="color:#0d6efd;" class="uk-icon"></span>
+                            Unlimited guided tours
+                        </span>
+                        <span>
+                            <span uk-icon="icon: check; ratio: 0.85" style="color:#0d6efd;" class="uk-icon"></span>
+                            Travel insurance
+                        </span>
+                    </div>
+                </div>
+                <div class="uk-card-footer">
+
+                    <div class="uk-flex uk-flex-center uk-margin">
+                        <button class="uk-button uk-width-1.1 my-button uk-border-rounded uk-width-1-1">
+                            SELECT PLAN
+                        </button>
                     </div>
                 </div>
             </div>
 
         </div>
+    </section>
 
-    </div>
+    <section class="uk-padding">
+        <div class="uk-text-center">
+            <h2 class="my-text-header2 uk-margin-remove">What travelers say</h2>
+            <label>Real stories from real adventures</label>
+        </div>
 
+        <div class="uk-margin-top uk-flex uk-flex-column uk-flex-middle uk-flex-center">
+
+            <article class="uk-comment uk-comment-primary uk-visible-toggle uk-margin-bottom" tabindex="-1 uk-border-rounded" role="comment">
+                    <header class="uk-comment-header uk-position-relative uk-margin-small">
+                        <span style="color: #F4C430;">★★★★★</span>
+                    </header>
+                    <div class="uk-comment-body uk-margin-small">
+                        <p>"The Kyoto package was absolutely magical. Every detail was perfectly organized — from the ryokan stay to the tea ceremony. Will definitely book again!"</p>
+                    </div>
+                    <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <span class="uk-background-primary uk-border-pill my-profile">NL</span>
+                            </div>
+                            <div class="uk-width-expand uk-padding-remove">
+                                <h4 class="uk-comment-title uk-margin-remove uk-text-default"><a class="uk-link-reset">Navy L.</a></h4>
+                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset">12 days ago</a></p>
+                            </div>
+                        </div>
+                </article>
+
+                <article class="uk-comment uk-comment-primary uk-visible-toggle uk-margin" tabindex="-1 uk-border-rounded" role="comment">
+                    <header class="uk-comment-header uk-position-relative uk-margin-small">
+                        <span style="color: #F4C430;">★★★★★</span>
+                    </header>
+                    <div class="uk-comment-body uk-margin-small">
+                        <p>"Santorini on a budget? Wanderly made it happen. The accommodation was stunning and the support team was always reachable. Highly recommended!"</p>
+                    </div>
+                    <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <span class="uk-background-primary uk-border-pill my-profile" style="background-color: #0DCaF0;">WS</span>
+                            </div>
+                            <div class="uk-width-expand uk-padding-remove">
+                                <h4 class="uk-comment-title uk-margin-remove uk-text-default"><a class="uk-link-reset">Wannawat S.</a></h4>
+                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset">12 days ago</a></p>
+                            </div>
+                        </div>
+                </article>
+
+                <article class="uk-comment uk-comment-primary uk-visible-toggle uk-margin" tabindex="-1 uk-border-rounded" role="comment">
+                    <header class="uk-comment-header uk-position-relative uk-margin-small">
+                        <span style="color: #F4C430;">★★★★☆</span>
+                    </header>
+                    <div class="uk-comment-body uk-margin-small">
+                        <p>"Paris was a dream. The guided tours gave us access to spots we'd never have found on our own. The only thing I'd add is more restaurant recommendations!"</p>
+                    </div>
+                    <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <span class="uk-background-primary uk-border-pill my-profile" style="background-color: #6F42C1;">TL</span>
+                            </div>
+                            <div class="uk-width-expand uk-padding-remove">
+                                <h4 class="uk-comment-title uk-margin-remove uk-text-default"><a class="uk-link-reset">Thanawat L.</a></h4>
+                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset">12 days ago</a></p>
+                            </div>
+                        </div>
+                </article>
+                
+        </div>
+    </section>
+
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
 </body>
+
 </html>
