@@ -10,6 +10,7 @@
     font-size: 40px;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
+
 .my-text-header2 {
     color: #1A1A2E;
     font-weight: bold;
@@ -21,10 +22,12 @@
     font: 500;
     font-size: 20px;
 }
+
 .my-text-para2 {
     font-weight: bold;
     font-size: 40px;
 }
+
 .my-text-para3 {
     color: rgba(0, 0, 0, 0.5);
 }
@@ -94,4 +97,31 @@
     color: white;
     padding: 8px;
     margin-right: 10px;
+}
+
+.my-text-footer {
+    font-size: medium;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 640px) {
+    .my-res-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .my-res-header3 {
+        font-size: 8px;
+        margin: 0;
+    }
+
+    .my-res-para {
+        font-size: 8px;
+        margin: 0;
+    }
+
 }

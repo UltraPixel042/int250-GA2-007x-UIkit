@@ -29,12 +29,12 @@
 
         <div class="my-search-box">
             <div class="uk-flex uk-grid-small">
-                <span class="uk-background-primary uk-border-rounded"
+                <span class="uk-background-primary uk-border-rounded uk-text-center"
                     style="color: white; cursor: pointer; padding-inline: 15px; padding-block: 2px; margin-left: 16px;">Flights
                     + Hotel
                 </span>
-                <span style="cursor: pointer;">Hotel only</span>
-                <span style="cursor: pointer;">Packages</span>
+                <span class="uk-text-center" style="cursor: pointer;">Hotel only</span>
+                <span class="uk-text-center" style="cursor: pointer;">Packages</span>
             </div>
 
             <div class="my-grid my-label">
@@ -105,31 +105,31 @@
 
         <div class="my-grid">
             <div class="uk-inline-clip uk-border-rounded uk-text-center my-card">
-                <img src="images/Kyoto.webp" width="1800" height="1200" alt="">
-                <div class="uk-card uk-card-overlay uk-card-body uk-border-rounded uk-position-cover uk-position-small">
-                    <h3 class="uk-card-title">Kyoto, Japan</h3>
-                    <p>from <span class="uk-text-warning">฿22,900</span></p>
+                <img src="images/Kyoto.webp" width="1800" height="1200" alt="Kyoto">
+                <div class="uk-card uk-card-overlay uk-card-body uk-border-rounded uk-position-cover uk-position-small my-res-card">
+                    <h3 class="uk-card-title my-res-header3">Kyoto, Japan</h3>
+                    <p class="my-res-para">from <span class="uk-text-warning">฿22,900</span></p>
                 </div>
             </div>
             <div class="uk-inline-clip uk-border-rounded uk-text-center my-card">
-                <img src="images/Paris.webp" width="1800" height="1200" alt="">
-                <div class="uk-card uk-card-overlay uk-card-body uk-border-rounded uk-position-cover uk-position-small">
-                    <h3 class="uk-card-title">Paris, France</h3>
-                    <p>from <span class="uk-text-warning">฿29,900</span></p>
+                <img src="images/Paris.webp" width="1800" height="1200" alt="Paris">
+                <div class="uk-card uk-card-overlay uk-card-body uk-border-rounded uk-position-cover uk-position-small my-res-card">
+                    <h3 class="uk-card-title my-res-header3">Paris, France</h3>
+                    <p class="my-res-para">from <span class="uk-text-warning">฿29,900</span></p>
                 </div>
             </div>
             <div class="uk-inline-clip uk-border-rounded uk-text-center my-card">
-                <img src="images/Santorini.jpg" width="1800" height="1200" alt="">
-                <div class="uk-card uk-card-overlay uk-card-body uk-border-rounded uk-position-cover uk-position-small">
-                    <h3 class="uk-card-title">Santorini, Greece</h3>
-                    <p>from <span class="uk-text-warning">฿38,500</span></p>
+                <img src="images/Santorini.jpg" width="1800" height="1200" alt="Santorini">
+                <div class="uk-card uk-card-overlay uk-card-body uk-border-rounded uk-position-cover uk-position-small my-res-card">
+                    <h3 class="uk-card-title my-res-header3">Santorini, Greece</h3>
+                    <p class="my-res-para">from <span class="uk-text-warning">฿38,500</span></p>
                 </div>
             </div>
             <div class="uk-inline-clip uk-border-rounded uk-text-center my-card">
-                <img src="images/Bali.webp" width="1800" height="1200" alt="">
-                <div class="uk-card uk-card-overlay uk-card-body uk-border-rounded uk-position-cover uk-position-small">
-                    <h3 class="uk-card-title">Bali, Indonesia</h3>
-                    <p>from <span class="uk-text-warning">฿14,500</span></p>
+                <img src="images/Bali.webp" width="1800" height="1200" alt="Bali">
+                <div class="uk-card uk-card-overlay uk-card-body uk-border-rounded uk-position-cover uk-position-small my-res-card">
+                    <h3 class="uk-card-title my-res-header3">Bali, Indonesia</h3>
+                    <p class="my-res-para">from <span class="uk-text-warning">฿14,500</span></p>
                 </div>
             </div>
         </div>
@@ -295,62 +295,158 @@
 
         <div class="uk-margin-top uk-flex uk-flex-column uk-flex-middle uk-flex-center">
 
-            <article class="uk-comment uk-comment-primary uk-visible-toggle uk-margin-bottom" tabindex="-1 uk-border-rounded" role="comment">
-                    <header class="uk-comment-header uk-position-relative uk-margin-small">
-                        <span style="color: #F4C430;">★★★★★</span>
-                    </header>
-                    <div class="uk-comment-body uk-margin-small">
-                        <p>"The Kyoto package was absolutely magical. Every detail was perfectly organized — from the ryokan stay to the tea ceremony. Will definitely book again!"</p>
+            <article class="uk-comment uk-comment-primary uk-visible-toggle uk-margin-bottom"
+                tabindex="-1 uk-border-rounded" role="comment">
+                <header class="uk-comment-header uk-position-relative uk-margin-small">
+                    <span style="color: #F4C430;">★★★★★</span>
+                </header>
+                <div class="uk-comment-body uk-margin-small">
+                    <p>"The Kyoto package was absolutely magical. Every detail was perfectly organized — from the ryokan
+                        stay to the tea ceremony. Will definitely book again!"</p>
+                </div>
+                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                        <span class="uk-background-primary uk-border-pill my-profile">NL</span>
                     </div>
-                    <div class="uk-grid-medium uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
-                                <span class="uk-background-primary uk-border-pill my-profile">NL</span>
-                            </div>
-                            <div class="uk-width-expand uk-padding-remove">
-                                <h4 class="uk-comment-title uk-margin-remove uk-text-default"><a class="uk-link-reset">Navy L.</a></h4>
-                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset">12 days ago</a></p>
-                            </div>
-                        </div>
-                </article>
+                    <div class="uk-width-expand uk-padding-remove">
+                        <h4 class="uk-comment-title uk-margin-remove uk-text-default"><a class="uk-link-reset">Navy
+                                L.</a></h4>
+                        <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset">12 days ago</a></p>
+                    </div>
+                </div>
+            </article>
 
-                <article class="uk-comment uk-comment-primary uk-visible-toggle uk-margin" tabindex="-1 uk-border-rounded" role="comment">
-                    <header class="uk-comment-header uk-position-relative uk-margin-small">
-                        <span style="color: #F4C430;">★★★★★</span>
-                    </header>
-                    <div class="uk-comment-body uk-margin-small">
-                        <p>"Santorini on a budget? Wanderly made it happen. The accommodation was stunning and the support team was always reachable. Highly recommended!"</p>
+            <article class="uk-comment uk-comment-primary uk-visible-toggle uk-margin" tabindex="-1 uk-border-rounded"
+                role="comment">
+                <header class="uk-comment-header uk-position-relative uk-margin-small">
+                    <span style="color: #F4C430;">★★★★★</span>
+                </header>
+                <div class="uk-comment-body uk-margin-small">
+                    <p>"Santorini on a budget? Wanderly made it happen. The accommodation was stunning and the support
+                        team was always reachable. Highly recommended!"</p>
+                </div>
+                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                        <span class="uk-background-primary uk-border-pill my-profile"
+                            style="background-color: #0DCaF0;">WS</span>
                     </div>
-                    <div class="uk-grid-medium uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
-                                <span class="uk-background-primary uk-border-pill my-profile" style="background-color: #0DCaF0;">WS</span>
-                            </div>
-                            <div class="uk-width-expand uk-padding-remove">
-                                <h4 class="uk-comment-title uk-margin-remove uk-text-default"><a class="uk-link-reset">Wannawat S.</a></h4>
-                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset">12 days ago</a></p>
-                            </div>
-                        </div>
-                </article>
+                    <div class="uk-width-expand uk-padding-remove">
+                        <h4 class="uk-comment-title uk-margin-remove uk-text-default"><a class="uk-link-reset">Wannawat
+                                S.</a></h4>
+                        <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset">12 days ago</a></p>
+                    </div>
+                </div>
+            </article>
 
-                <article class="uk-comment uk-comment-primary uk-visible-toggle uk-margin" tabindex="-1 uk-border-rounded" role="comment">
-                    <header class="uk-comment-header uk-position-relative uk-margin-small">
-                        <span style="color: #F4C430;">★★★★☆</span>
-                    </header>
-                    <div class="uk-comment-body uk-margin-small">
-                        <p>"Paris was a dream. The guided tours gave us access to spots we'd never have found on our own. The only thing I'd add is more restaurant recommendations!"</p>
+            <article class="uk-comment uk-comment-primary uk-visible-toggle uk-margin" tabindex="-1 uk-border-rounded"
+                role="comment">
+                <header class="uk-comment-header uk-position-relative uk-margin-small">
+                    <span style="color: #F4C430;">★★★★☆</span>
+                </header>
+                <div class="uk-comment-body uk-margin-small">
+                    <p>"Paris was a dream. The guided tours gave us access to spots we'd never have found on our own.
+                        The only thing I'd add is more restaurant recommendations!"</p>
+                </div>
+                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                        <span class="uk-background-primary uk-border-pill my-profile"
+                            style="background-color: #6F42C1;">TL</span>
                     </div>
-                    <div class="uk-grid-medium uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
-                                <span class="uk-background-primary uk-border-pill my-profile" style="background-color: #6F42C1;">TL</span>
-                            </div>
-                            <div class="uk-width-expand uk-padding-remove">
-                                <h4 class="uk-comment-title uk-margin-remove uk-text-default"><a class="uk-link-reset">Thanawat L.</a></h4>
-                                <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset">12 days ago</a></p>
-                            </div>
-                        </div>
-                </article>
-                
+                    <div class="uk-width-expand uk-padding-remove">
+                        <h4 class="uk-comment-title uk-margin-remove uk-text-default"><a class="uk-link-reset">Thanawat
+                                L.</a></h4>
+                        <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset">12 days ago</a></p>
+                    </div>
+                </div>
+            </article>
+
         </div>
     </section>
+
+    <section class="my-gradient-bg uk-margin-remove uk-padding">
+        <div class="uk-margin-small">
+            <h1 class="my-text-header uk-text-center uk-padding-top uk-margin-remove">Ready for your next adventure?
+            </h1>
+            <p class="my-text-para uk-text-center uk-margin-remove">Join 150,000+ travelers who've discovered the world
+                with wanderly</p>
+        </div>
+
+        <div class="uk-flex uk-flex-center">
+            <button class="uk-button uk-width-1.1 my-button uk-border-rounded uk-width-3-4">
+                START PLANNING NOW →
+            </button>
+        </div>
+
+    </section>
+
+    <footer class="uk-navbar uk-navbar-container uk-padding uk-flex uk-flex-column uk-flex-middle"
+        style="background-color: #0F1B2D;">
+
+        <div>
+            <h1 class="my-logo">Wander<span style="color: #38C9EF;">ly</span></h1>
+            <label class="my-text-label uk-text-center uk-padding-top uk-padding-bottom">Your trusted travel partner
+                for unforgettable journeys around the globe.</label>
+        </div>
+
+        <div class="uk-grid-medium" uk-grid>
+            <div class="my-text-para uk-margin-small">
+                <span class="my-text-footer">Company</span>
+                <ul class="uk-list my-text-footer uk-margin-small">
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#">Press</a>
+                    </li>
+                    <li>
+                        <a href="#">Partners</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="my-text-para uk-margin-small">
+                <span class="my-text-footer">Destinations</span>
+                <ul class="uk-list my-text-footer uk-margin-small">
+                    <li>
+                        <a href="#">Asia Pacific</a>
+                    </li>
+                    <li>
+                        <a href="#">Europe</a>
+                    </li>
+                    <li>
+                        <a href="#">Americas</a>
+                    </li>
+                    <li>
+                        <a href="#">Middle East</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="my-text-para uk-margin-small">
+                <span class="my-text-footer">Support</span>
+                <ul class="uk-list my-text-footer uk-margin-small">
+                    <li>
+                        <a href="#">Help center</a>
+                    </li>
+                    <li>
+                        <a href="#">Cancel booking</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy olicy</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <span>© 2026 Wanderly. All rights reserved.</span>
+
+    </footer>
 
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
