@@ -20,8 +20,6 @@
     ```
 2.  เปิดไฟล์ `index.html` ผ่าน Browser หรือใช้ **Live Server** ใน VS Code เพื่อดูผลลัพธ์แบบ Real-time
 
-    > !!! **หมายเหตุ:** ไม่ต้องลบหรือ git ignore ตัว node_modules/
-
 ## 📁 Project Structure (โครงสร้างโปรเจค)
 
 ```text
